@@ -52,18 +52,18 @@ Random(min, max) {
 
 *End::
     loopstop = 1
-    TripleClickEnabled := false
+    SixClickEnabled := false
 return
 
-TripleClickEnabled := false
+SixClickEnabled := false
 
 *XButton2::
-    TripleClickEnabled := false
+    SixClickEnabled := false
     Sleep, 30
 return
 
 $LButton::
-    if (TripleClickEnabled)
+    if (SixClickEnabled)
     {
         Loop, 6
         {
@@ -83,9 +83,10 @@ $LButton::
 return
 
 *XButton1::
-	TripleClickEnabled := true
+	SixClickEnabled := true
 	Sleep, 30
 return
 
 Del::ExitApp
+
 
